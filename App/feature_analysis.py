@@ -5,8 +5,8 @@ import os
 class FeatureAnalysis:
     def __init__(self):
         ##os.system("start \"\" ./pandas_profiling_report/profile.html")
-        st.write('''
-                 <a target="_blank" href="./pandas_profiling_report/profile.html">
+        st.write(f'''
+                 <a target="_blank" href="{os.path.abspath(os.getcwd())}\\pandas_profiling_report\\profile.html">
                     <button class="css-5uatcg edgvbvh10" kind="secondary">
                         <div data-testid="stMarkdownContainer" class="css-1fv8s86 e16nr0p34">
                             <p> Features </p>
