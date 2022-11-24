@@ -6,7 +6,7 @@ from PIL import Image
 
 class Main():
     def __init__(self):
-        image = Image.open('./app/icon/1881195.png')
+        image = Image.open('./App/icon/1881195.png')
         st.set_page_config(
             page_title="Câncer de Pulmão",
             page_icon=image
@@ -47,11 +47,27 @@ class Main():
         
         with col3:
             st.header("O que você deseja fazer?")
-            
+        
         with col5:
             st.text("Realizar a analise das\nfeatures utilizadas\nno modelo")
             st.button("Features",on_click=lambda:self.set_page(2))
 
+        st.markdown("""
+                    <br/>
+                    <br/>
+                    <center>
+                            <a href="https://github.com/TheGabrielSN/techshot_lung_cancer_prediction">
+                                <div class="row-widget stButton" style="width: 600px;">
+                                    <button kind="secondary" class="css-5uatcg edgvbvh10">
+                                        <div data-testid="stMarkdownContainer" class="css-1fv8s86 e16nr0p34">
+                                            <p>Github</p>
+                                        </div>
+                                    </button>
+                                </div>
+                            </a>
+                    </center>
+                    """,unsafe_allow_html=True)
+        
 
             
 if __name__ == '__main__':
