@@ -44,12 +44,6 @@ class PredictResults:
         st.markdown('---')
         
     def sidebar_itemns(self):
-        
-        st.sidebar.markdown('---')
-        st.sidebar.write('##### Os valores padrões são definidos aleatoriamente (apenas para deixar mais dinâmico)')
-        st.sidebar.write('##### Pressione R para gerar os valores novamente)')
-        st.sidebar.markdown('---')
-
         st.sidebar.write("### Selecione a resposta que mais se adequa, sendo:")
         st.sidebar.write("###### 0 - Baixo")
         st.sidebar.write("###### 5 - Moderado")
