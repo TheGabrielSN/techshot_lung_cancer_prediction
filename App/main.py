@@ -5,6 +5,7 @@ from feature_analysis import *
 class Main():
     def __init__(self):
         self.placeholder = st.empty()
+        self.fa = FeatureAnalysis()
         
         if "page" not in st.session_state:
             st.session_state.page = 0
@@ -17,9 +18,13 @@ class Main():
             st.button("Voltar",on_click=lambda:self.set_page(0))
             
         if st.session_state.page == 2:
-            st.button("Voltar",on_click=lambda:self.set_page(0))
-            st.write("Resultado gerado com o Pandas Profiling")
-            FeatureAnalysis()
+            self.fa.main()
+        
+        if st.session_state.page == 3:
+            self.fa.pandas_profile()
+            
+        if st.session_state.page == 4:
+            self.fa.evidently()
     
     def set_page(self,num):
         st.session_state.page=num
