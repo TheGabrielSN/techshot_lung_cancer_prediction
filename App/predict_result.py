@@ -1,7 +1,6 @@
 import pickle
 import pandas as pd
 import streamlit as st
-from random import randint
 
 class PredictResults:
     def __init__(self):
