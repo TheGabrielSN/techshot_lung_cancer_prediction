@@ -1,9 +1,17 @@
 import streamlit as st
 from predict_result import *
 from feature_analysis import *
+from PIL import Image
+
 
 class Main():
     def __init__(self):
+        image = Image.open('./app/icon/1881195.png')
+        st.set_page_config(
+            page_title="Câncer de Pulmão",
+            page_icon=image
+        )
+        
         self.placeholder = st.empty()
         self.fa = FeatureAnalysis()
         
