@@ -1,9 +1,6 @@
-import pickle
 import streamlit as st
 from streamlit import components
 from streamlit_pandas_profiling import st_profile_report
-import os
-
 
 class FeatureAnalysis:           
     def set_page(self,num):
