@@ -12,7 +12,7 @@ pip install requirements.txt
 ```
 
 ## Execução
-Acesse a execução do programa no [streamlit](https://thegabrielsn-techshot-lung-cancer-prediction-appmain-twptge.streamlit.app/)
+Acesse a execução do programa no [streamlit](https://thegabrielsn-tsml-lung-cancer-prediction.streamlit.app/)
 
 ## Modelo
 [SVM](https://github.com/TheGabrielSN/techshot_lung_cancer_prediction/tree/main/models)
